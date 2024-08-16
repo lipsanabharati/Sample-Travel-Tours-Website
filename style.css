@@ -1,0 +1,323 @@
+body{
+    font-family: sans-serif;
+}
+
+#logo{
+    width: 7rem;
+}
+
+.nav-item{
+    font-size: 0.9rem;
+}
+.nav-item:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#main{
+    background-image: url(mainbg.png);
+    background-repeat: no-repeat;
+}
+#best{
+    color: #DF6951;
+    font-weight: bold;
+}
+#travel{
+    font-size: 5rem;
+    color: #181E4B;
+    font-weight: bolder;
+    position: relative;
+    z-index: 0;
+}
+#decore{
+    width: 20rem;
+    height: 1rem;
+    position: absolute;
+    top:18rem ;
+    left:20rem ;
+    z-index: -1;
+}
+
+#herobtn1{
+    background-color: #F1A501;
+    border: none;
+}
+#herobtn1:hover{
+    background-color: #b87e01;
+}
+
+#herobtn2{
+    background-color: #DF6951;
+    border: none;
+}
+#herobtn2:hover{
+    background-color: #af5240;
+}
+
+#services{
+    background-image: url(servicesbg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#services-heading{
+    margin-bottom: 4em;
+}
+#box{
+    position: relative;
+    z-index: 2;
+}
+#card {
+    border-radius: 10px;
+    transition: all 0.3s ease; 
+    position: relative; 
+    z-index: 2; 
+}
+
+#card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    z-index: 3; 
+}
+
+#rectangle{
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s linear;
+    position: absolute;
+    bottom: -40px;
+    left: -50px;
+}
+
+#box:hover{
+     #rectangle{
+        opacity: 1;
+     }
+}
+
+.size{
+    height: 40%;
+    width: 50%;
+}
+
+#category{
+    color: #5E6282;
+    font-weight: bold;
+}
+#best-service{
+    color: #14183E;
+    font-size: 4em;
+    font-weight: bolder;
+}
+#card-see{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#n-margin{
+    background-color: white;
+    margin-top: -8em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius:2em ;
+}
+
+#london{
+    height: 26.4em;
+}
+
+#form{
+    background-image: url(formbg.png);
+    border-radius: 2em;
+    position: relative;
+}
+#send-icon{
+    position: absolute;
+    top: -2em;
+    right: -2em;
+}
+#subscribebtn{
+    background-image: linear-gradient(#FF946D,#FF7D68);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-in from Left Animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide-in from Right Animation */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hover Animations for Buttons */
+#herobtn1:hover, #herobtn2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+#hero:hover, .size:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Animation applied to sections */
+#main, #services, #destinations, #book, #subscribe {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Slide-in effects */
+#travel {
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+#best {
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+/* Fade-in Animation for Cards */
+.card {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Hover effect for Cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for Social Media Icons */
+#footer img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* Fade-in for the subscribe section */
+#form {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#footer a {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+#footer img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#footer img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    opacity: 0.8; /* Slightly fade the icon */
+}
+
+#footer .list-unstyled li {
+    transition: transform 0.3s ease;
+}
+
+#footer .list-unstyled li:hover {
+    transform: translateX(5px); 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#book {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#subscribe {
+    animation: slideInUp 1.2s ease-in-out;
+}
+
+#brands {
+    animation: scaleUp 1.5s ease-in-out;
+}
+
+#book img, #subscribe img, #brands img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#book img:hover, #subscribe img:hover, #brands img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#book button, #subscribe button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#book button:hover, #subscribe button:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+@media (max-width:767px){
+    #subscribe #bar{
+      margin-left: -8em;
+    }
+    header .nav-item{
+        font-size: 12px;
+    }
+}
+@media (max-width:1159px){
+    #decore{
+        display: none;
+    }
+}
+
+
